@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DataNusa — Portal Statistik Indonesia</title>
+<meta name="description" content="Portal statistik Indonesia: penduduk, ekonomi, inflasi, pengangguran, kemiskinan, dan perdagangan, dengan angka resmi dan sumbernya.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/" aria-label="DataNusa — beranda">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="2" width="36" height="36" rx="9" fill="#0e5f5c"/><rect x="10" y="20" width="5" height="11" rx="1.5" fill="#f2b33d"/><rect x="18" y="13" width="5" height="18" rx="1.5" fill="#ffffff"/><rect x="26" y="8" width="5" height="23" rx="1.5" fill="#7fc8c2"/></svg>
+      <span class="brand-name">Data<span class="brand-accent">Nusa</span></span>
+      <span class="brand-sub">Portal Statistik Indonesia</span>
+    </a>
+    <nav class="mainnav" aria-label="Navigasi utama">
+      <a href="#/" data-nav="home">Beranda</a>
+      <a href="#/ekonomi" data-nav="ekonomi">Ekonomi</a>
+      <a href="#/penduduk" data-nav="penduduk">Penduduk</a>
+      <a href="#/tenaga-kerja" data-nav="tenaga-kerja">Tenaga Kerja</a>
+      <a href="#/provinsi" data-nav="provinsi">Provinsi</a>
+      <a href="#/tentang" data-nav="tentang">Tentang</a>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false" title="Beralih ke mode gelap">Mode gelap</button>
+  </div>
+</header>
+
+<main id="view" class="wrap" aria-live="polite"></main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p><strong>DataNusa</strong> — portal statistik independen yang menyajikan angka-angka resmi Indonesia dalam format yang mudah dibaca. DataNusa bukan situs resmi Badan Pusat Statistik (BPS).</p>
+    <p class="footer-sources">Sumber angka: Badan Pusat Statistik (BPS), Bank Indonesia, Kementerian Keuangan. Setiap angka di situs ini mencantumkan tahun dan sumbernya di bawah grafik atau tabel terkait. Data terakhir diperbarui Januari 2026.</p>
+    <p class="footer-nav"><a href="#/">Beranda</a> · <a href="#/ekonomi">Ekonomi</a> · <a href="#/penduduk">Penduduk</a> · <a href="#/tenaga-kerja">Tenaga Kerja</a> · <a href="#/provinsi">Provinsi</a> · <a href="#/tentang">Tentang &amp; Metodologi</a></p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
